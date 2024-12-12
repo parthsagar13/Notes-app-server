@@ -9,6 +9,7 @@ const app = express();
 // Environment Variables
 require("dotenv").config();
 
+console.log("env", process.env.dbURL)
 // Connecting to Database
 mongoose
   .connect("mongodb+srv://kalathiyaparth744:YSdNweJGPWC8wind@cluster0.xun8c.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", {
